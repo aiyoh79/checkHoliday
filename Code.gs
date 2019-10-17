@@ -24,7 +24,7 @@ function holiday(dateToCheck) {
   var isHoliday = 0;
   // if there is only one holiday per day  
   if (holidays.length >= 1){
-    for (i = 0; i < holidays.length; i ++){
+    for (var i = 0; i < holidays.length; i++){
       var eventTitle = holidays[i].getTitle();
       // if the title is not in the exclusion list, then is holiday 
       if ( nonHolidayArray.indexOf(eventTitle) == -1 ){
